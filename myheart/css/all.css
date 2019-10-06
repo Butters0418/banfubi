@@ -1,0 +1,143 @@
+img {
+  max-width: 100%;
+}
+
+.code {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.main {
+  position: relative;
+  overflow: hidden;
+}
+
+.top__bar {
+  position: fixed;
+  width: 100%;
+  max-width: 700px;
+  z-index: 20;
+  margin-bottom: 0;
+  padding: 10px;
+  list-style: none;
+  text-align: center;
+  background-color: #ff8c97;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.top__bar li {
+  display: inline-block;
+}
+
+.top__bar li:not(:last-child) {
+  border-right: 2px solid #fff;
+}
+
+.top__bar a {
+  display: block;
+  padding: 0 15px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767.98px) {
+  .top__bar a {
+    padding: 0 2.5vw;
+    font-size: 4vw;
+  }
+}
+
+section {
+  position: relative;
+}
+
+.section1 {
+  margin-top: 50px;
+}
+
+.s1_slogan {
+  position: absolute;
+  top: 10%;
+  left: 6%;
+  width: 90%;
+  z-index: 5;
+}
+
+.s1_icon {
+  position: absolute;
+  top: 34%;
+  left: 47%;
+  width: 14%;
+  z-index: 5;
+  -webkit-animation: s1_rotate 1s infinite alternate step-start;
+          animation: s1_rotate 1s infinite alternate step-start;
+}
+
+.s1_rabbit {
+  position: absolute;
+  top: 85%;
+  left: 77%;
+  width: 18%;
+  z-index: 5;
+  -webkit-animation: s1_rotate 1s infinite alternate step-start;
+          animation: s1_rotate 1s infinite alternate step-start;
+}
+
+.s1_title1 {
+  position: absolute;
+  top: 72%;
+  left: 6%;
+  width: 42%;
+  z-index: 5;
+}
+
+.s1_title2 {
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  width: 42%;
+  z-index: 5;
+}
+
+.s1_title3 {
+  position: absolute;
+  top: 84%;
+  left: 6%;
+  width: 75%;
+  z-index: 5;
+}
+
+@-webkit-keyframes s1_rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+
+@keyframes s1_rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+/*# sourceMappingURL=all.css.map */
