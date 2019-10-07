@@ -1,0 +1,331 @@
+@import 'variable';
+
+html,body {
+  background-color: #eaeaea;
+}
+.code {
+  max-width: 700px;
+  margin: 0 auto;
+}
+a:active,
+a:focus,
+button:active,
+button:focus,
+area:active,
+area:focus,
+div:focus {
+  box-shadow: none;
+  outline: 0;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+.main {
+  position: relative;
+  overflow: hidden;
+}
+.top_bar {
+  position: fixed;
+  width: 100%;
+  max-width: 700px;
+  z-index: 20;
+  margin-bottom: 0;
+  padding: 10px;
+  list-style: none;
+  text-align: center;
+  background-color: #ff8c97;
+  box-shadow: 0 2px 10px rgba(#000,.2);
+  li {
+    display: inline-block;
+    &:not(:last-child) {
+      border-right: 2px solid #fff;
+    }
+  }
+  a {
+    display: block;
+    padding: 0 15px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    text-decoration: none;
+    @include media($pad) {
+      padding: 0 2.5vw;
+      font-size: 4vw;
+    }
+  }
+}
+//section1
+section {
+  position: relative;
+}
+.section1 {
+  margin-top: 50px;
+}
+.s1_slogan {
+  @include poa(10%,6%,90%);
+}
+.s1_icon {
+  @include poa(34%,47%,14%);
+}
+.s1_rabbit {
+  @include poa(85%,77%,18%);
+}
+.s1_title1 {
+  @include poa(72%,6%,42%);
+}
+.s1_title2 {
+  @include poa(72%,50%,42%);
+}
+.s1_title3 {
+  @include poa(84%,6%,75%);
+}
+
+//section2 
+.s2_slogan {
+  @include poa(0%,12%,76%);
+}
+.s2_icon {
+  @include poa(28%,92%,14%);
+}
+.s2_pop1 {
+  @include poa(19%,3%,46%);
+}
+.s2_pop2 {
+  @include poa(19%,51%,46%);
+}
+.s2_pop3 {
+  @include poa(57%,3%,46%);
+}
+.s2_pop4 {
+  @include poa(57%,51%,46%);
+}
+.s2_btn {
+  @include poa(83%,3%,94%);
+}
+.s2_btnicon {
+  @include poa(55%,63%,10%);
+  display: block;
+}
+.wave {
+  animation: wave 2s infinite alternate;
+}
+//section3
+.s3_title {
+  @include poa(8%,12%,76%);
+}
+.s3_star {
+  @include poa(12%,29%,39%);
+}
+.s3_cloud1 {
+  @include poa(42%,76%,23%);
+  z-index: 10;
+  pointer-events: none;
+}
+.s3_cloud2 {
+  @include poa(87%,0%,23%);
+  z-index: 10;
+  pointer-events: none;
+}
+.swiper-container {
+  @include poa(35%,8%,84%);
+  padding-bottom: 14%;
+  .swiper-slide {
+    text-align: center;
+    img {
+      width: 90%;
+    }
+  }  
+}
+.swiper-button-next, .swiper-button-prev {
+  top: 70%;
+  background-image: none;
+  width: 4%;
+}
+.swiper-button-prev {
+  left: 5px;
+}
+.swiper-button-next{
+  right: 5px;  
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+  bottom: 0;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin:  0 2%;
+}
+.swiper-pagination-bullet {
+  margin: 0 8px;
+  background-color: #fff;
+  opacity: 1;
+  width: 14px;
+  height: 14px;
+  @include media($mobile) {
+    width: 10px;
+    height: 10px;
+  }
+}
+.swiper-pagination-bullet-active {
+  background-color: #fb7373;
+}
+//section4 
+.s4_title {
+  @include poa(4%,8%,84%);
+}
+.s4_icon {
+  @include poa(28%,3%,94%);
+}
+//section5
+.s5_title {
+  @include poa(0%,6%,74%);
+}
+.s5_icon {
+  @include poa(2%,80%,19%);
+}
+.s5_list1 {
+  @include poa(7%,6%,15%);
+}
+.s5_list2 {
+  @include poa(35.5%,77%,18%);
+}
+.s5_list3 {
+  @include poa(67%,6%,17%);
+}
+.s5_light {
+  @include poa(22%,39%,15%);
+}
+.s5_light2 {
+  @include poa(79%,54%,12%);
+}
+.s5_talk {
+  @include poa(50%,61%,38%);
+}
+.s5_pop1 {
+  @include poa(57%,5%,43%);
+}
+.s5_pop2 {
+  @include poa(77%,6%,51%);
+}
+.s5_pop3 {
+  @include poa(91%,4%,35%);
+}
+.s5_pop4 {
+  @include poa(91%,60%,35%);
+}
+//section6
+.s6_list4 {
+  @include poa(1%,74%,18%);
+}
+.s6_list5 {
+  @include poa(62%,6%,16%);
+}
+.s6_talk {
+  @include poa(23%,49%,32%);
+}
+// section8
+.s8_title {
+  @include poa(3%,22%,55%);
+}
+.s8_pd {
+  @include poa(16%,14%,56%);
+}
+//section10
+.s10_title {
+  @include poa(3%,22%,55%);
+}
+.s10_icon {
+  @include poa(23%,79%,5%);
+}
+.s10_photo{
+  @include poa(60%,5%,90%);
+}
+//section11
+.s11_title {
+  @include poa(18%,30%,38%);
+}
+.s11_title2 {
+  @include poa(24%,14%,73%);
+}
+.s11_icon {
+  @include poa(35%,10%,80%);
+}
+//section12
+.s12_title {
+  @include poa(1%,12%,76%);
+}
+.s12_title2 {
+  @include poa(18%,30%,40%);
+}
+.s12_pd {
+  @include poa(28%,5%,90%);
+}
+//section13
+.s13_qa {
+  @include poa(6%,8%,86%);
+}
+.s13_ban {
+  @include poa(82%,80%,15%);
+}
+
+// animation
+.rotate {
+  animation: rotate 1s infinite alternate step-start;
+}
+.light {
+  animation: light 1s infinite step-start;
+}
+.move {
+  animation: move 1s infinite step-start;
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(20deg);
+  }
+}
+@keyframes light {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes move {
+  0%{
+    transform: translateX(0)
+  }
+  50%{
+    transform: translateX(0)
+  }
+  100%{
+    transform: translateX(15%);
+  }
+}
+.fb_icon {
+  display: block;
+  position: fixed;
+  right: 20px;
+  bottom: 90px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,.2), 3px 3px 3px rgba(0,0,0,.3);
+  @media (max-width: 576px) {
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    bottom: 100px;
+  }
+}
