@@ -131,39 +131,55 @@
       </section>
       <!-- section9 -->
       <section class="section9">
-        <img class="revealFade" src="img/s9_bg.jpg">
+        <img class="fadein" src="img/s9_bg.jpg">
       </section>
+      <section class="ScrollTrack track" data-name="newsection3" data-id="11"></section>
       <!-- section10 -->
       <section class="section10" id="section10">
         <img src="img/s10_bg.jpg">
         <img class="s10_title" src="img/s10_title.png">
         <img class="s10_icon light" src="img/s10_icon.png">
-        <img class="s10_photo revealFade" src="img/s10_photo.png">
+        <img class="s10_photo" src="img/s10_photo.png">
       </section>
       <!-- section11 -->
       <section class="section11">
         <img src="img/s11_bg.jpg">
         <img class="s11_title animated pop" src="img/s11_title.png">
         <img class="s11_title2 animated pop" src="img/s11_title2.png">
-        <img class="s11_icon revealFade" src="img/s11_icon.png">
+        <img class="s11_icon" src="img/s11_icon.png">
       </section>
       <!-- section12 -->
       <section class="section12">
         <img src="img/s12_bg.jpg">
         <img class="s12_title animated pop" src="img/s12_title.png">
-        <img class="s12_title2 revealFade" src="img/s12_title2.png">
-        <img class="s12_pd revealFade" src="img/s12_pd.png">
+        <img class="s12_title2" src="img/s12_title2.png">
+        <img class="s12_pd fadein" src="img/s12_pd.png">
+      </section>
+      <!-- section video -->
+      <section class="video">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/o6Wmvq2yYfU" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ntw3KdX0GEI" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
+      <!-- section add -->
+      <section class="section15">
+        <img class="fadein" src="img/s15_1.jpg">
+        <img class="fadein" src="img/s15_2.jpg">
       </section>
       <!-- section13 -->
       <section class="section13" id="section13">
         <img id="s13_bg" src="img/s13_bg.jpg">
-        <img class="s13_qa" src="img/s13_qa.png">
+        <img class="s13_qa fadein" src="img/s13_qa.png">
         <img class="s13_ban animated" src="img/s13_ban.png">
       </section>
       <!-- section14 -->
       <section class="section14">
         <img src="img/s14_footer.jpg">
       </section>
+      <section class="ScrollTrack track" data-name="newsection4" data-id="1"></section>
       <section id="section15"></section>
     </div>
     <a href="https://www.facebook.com/beautifulstorytw/" class="fb_icon">
@@ -188,7 +204,53 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.5/scrollreveal.min.js'></script>
   <script src="js/all.js"></script>
+  <script>
+    // document.getElementById('s13_bg').onload = function () {
+    //   all();
+    // };
+    // function all() {
+    //   window.sr = ScrollReveal({ reset: false, delay: 200, viewFactor: 0.8 });
+    //   sr.reveal('.s1_slogan,.s5_title', { interval: 250, scale: 0.5, beforeReveal: rubberBand, });
+    //   sr.reveal('.revealFade', { interval: 250, distance: '80px' });
+    //   sr.reveal('.pop', { interval: 150, beforeReveal: bounceIn });
+    //   sr.reveal('.s13_ban', { interval: 100, delay: 400, afterReveal: bounce });
+    //   sr.reveal('.s13_qa', { interval: 100, delay: 0, viewFactor: 0.1 });
+    //   function rubberBand(el) {
+    //     $(el).addClass('rubberBand');
+    //   }
+    //   function bounceIn(el) {
+    //     $(el).addClass('bounceIn');
+    //   }
+    //   function bounce(el) {
+    //     $(el).addClass('bounce');
+    //   }
+    //   var swiper = new Swiper('.swiper-container', {
+    //     loop: true,
+    //     autoplay: {
+    //       delay: 2500,
+    //       disableOnInteraction: false,
+    //     },
+    //     navigation: {
+    //       nextEl: '.swiper-button-next',
+    //       prevEl: '.swiper-button-prev',
+    //     },
+    //     pagination: {
+    //       el: '.swiper-pagination',
+    //       clickable: true,
+    //     },
+    //   });
 
+    //   // [錨點]--// 判斷滑動位置
+    //   $('a[href^="#"]').on('click', function (e) {
+    //     e.preventDefault();
+    //     var target = $(this).attr('href');
+    //     var targetTop = $(target).offset().top - 50;
+    //     $('html, body').stop().animate({
+    //       scrollTop: targetTop
+    //     }, 300);
+    //   });
+    // }
+  </script>
 </body>
 
 </html>
