@@ -1,5 +1,8 @@
 document.getElementById('s13_bg').onload = function () {
-  all();
+  setTimeout(function () {
+    $('.loading_mask').remove();
+    all();
+  }, 300)
 };
 
 function all() {
